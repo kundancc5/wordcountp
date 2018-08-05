@@ -1,0 +1,17 @@
+<h1 style="text-align:center;">Word Count Page</h1>
+
+<a href="{% url 'home' %}">Start a new count</a>
+
+<h2>There are {{ count }} word in your list.</h2>
+
+<h2>Your Text:</h2>
+
+{{ fulltext }}
+
+<h2>Word count:</h2>
+
+{% for word, counttotal in wlist %}
+
+{{ word }} -- {{ counttotal }} time <br>
+
+{% endfor %}

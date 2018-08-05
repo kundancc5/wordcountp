@@ -1,0 +1,19 @@
+<html>
+<body>
+<head></head>
+<h1>Welcome to new django app WordCount!</h1>
+
+<form>
+  <button formaction="{% url 'about' %}">AboutUs</button>
+</form>
+<br>
+  <form action="{% url 'count' %}">
+
+        <textarea id="subject" name="fulltext" placeholder="Write something.." style="height:200px; width:500px;"></textarea>
+
+    <div>
+      <input type="submit" value="Count">
+    </div>
+  </form>
+</body>
+</html>
